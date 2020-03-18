@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
 string
 -
 vector
@@ -14,31 +14,37 @@ vector
 filesystem
 -
 
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Impl/ImplWindows.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Impl/ImplLinux.hpp
+../Config/SelfContainedConfig.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
 string
 -
 vector
 -
-Windows.h
+features.h
 -
-../Config/SelfContainedConfig.hpp
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
-../Util/Utilities.hpp
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
+libintl.h
+-
+dirent.h
+-
+dlfcn.h
+-
 
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Mains/MainWindows.cpp
-../Impl/ImplWindows.hpp
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Impl/ImplWindows.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Mains/MainLinux.cpp
+../Impl/ImplLinux.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Impl/ImplLinux.hpp
 ../coreclrhost.h
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
+/home/matthew/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
+../Util/Utilities.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
 iostream
 -
 
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
 ../Config/SelfContainedConfig.hpp
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
+/home/matthew/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
 string
 -
 
-C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
+/home/matthew/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
 

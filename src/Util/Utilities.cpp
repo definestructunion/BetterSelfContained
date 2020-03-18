@@ -1,8 +1,6 @@
 #include "Utilities.hpp"
 #include <filesystem>
 
-#include <iostream>
-
 std::string getExecutingPath() {
     return std::filesystem::current_path().string();
 }
@@ -71,8 +69,6 @@ void buildTPAListGrabRuntime(
         const std::string& fsSeparator,
         const std::string& pathDelimiter,
         std::string& tpaList) {
-
-    std::cout << "Grabbing Runtime" << std::endl;
 
     std::string directory = executingPath + fsSeparator + config.runtimePath;
 

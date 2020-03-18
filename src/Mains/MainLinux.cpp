@@ -14,15 +14,42 @@ int main() {
     std::string coreClrPath = executingPath + fsSeparator + config.runtimePath + fsSeparator + clrName;
     std::string mainAssemblyPath = executingPath + config.assemblyName;
 
-    void* coreClr = loadLibrary(coreClrPath);
+    LOG(coreClrPath);
+
+    //void* coreClr = loadLibrary(coreClrPath);
+    void* coreClr = dlopen(coreClrPath.c_str(), RTLD_NOW | RTLD_LOCAL);
+
+
+    LOG("dlopen Error: " << dlerror());
+
+    if(!coreClr)
+        LOG("Uh oh");
 
     coreclr_initialize_ptr initializeCoreClr = (coreclr_initialize_ptr)dlsym(coreClr, "coreclr_initialize");
     coreclr_execute_assembly_ptr executeAssembly = (coreclr_execute_assembly_ptr)dlsym(coreClr, "coreclr_execute_assembly");
     coreclr_shutdown_ptr shutdownCoreClr = (coreclr_shutdown_ptr)dlsym(coreClr, "coreclr_shutdown");
 
+    if (initializeCoreClr == NULL)
+    {
+        printf("coreclr_initialize not found\n");
+        //return -1;
+    }
+
+    if (executeAssembly == NULL)
+    {
+        printf("coreclr_create_delegate not found\n");
+        //return -1;
+    }
+
+    if (shutdownCoreClr == NULL)
+    {
+        printf("coreclr_shutdown not found\n");
+        //return -1;
+    }
+
     std::string tpaList;
     buildTPAList(config, getRuntimeLibraries(), executingPath, fsSeparator, getDelimiter(), tpaList);
-    LOG(tpaList);
+    //LOG(tpaList);
 
 
     const char* propertyKeys[] = {
@@ -46,6 +73,8 @@ int main() {
             &hostHandle,                            // Host handle
             &domainId);                             // AppDomain ID
 
+    LOG("HEre");
+
     if (hr >= 0)
     {
         printf("CoreCLR started\n");
@@ -62,6 +91,8 @@ int main() {
     for(int i = 0; i < config.clrArgs.size(); ++i)
         clrArgs[i] = config.clrArgs[i].c_str();
 
+
+    LOG("Here");
 
     hr = executeAssembly(
             hostHandle,

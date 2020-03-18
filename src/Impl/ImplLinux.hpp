@@ -6,6 +6,9 @@
 #include <string>
 #include <vector>
 
+#include <features.h>
+#include <libintl.h>
+
 #include <dirent.h>
 #include <dlfcn.h>
 

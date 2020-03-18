@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/BetterSelfContained.dir/src/Mains/MainLinux.cpp.o CMakeFiles/BetterSelfContained.dir/src/Config/SelfContainedConfig.cpp.o CMakeFiles/BetterSelfContained.dir/src/Util/Utilities.cpp.o  -o BetterSelfContained -ldl 

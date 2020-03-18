@@ -35,7 +35,9 @@ add_executable(${PROJECT_NAME}
 if(APPLE)
     target_compile_options(${PROJECT_NAME} PRIVATE -mwindows)
 elseif(UNIX)
-    target_compile_options(${PROJECT_NAME} PRIVATE -mwindows)
+    #target_compile_options(${PROJECT_NAME} PRIVATE -mwindows)
+    target_link_libraries(${PROJECT_NAME} ${CMAKE_DL_LIBS})
+    target_compile_options(${PROJECT_NAME} PRIVATE -ldl)
 else() #WIN32
     set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS /SUBSYSTEM:WINDOWS)
 endif(APPLE)

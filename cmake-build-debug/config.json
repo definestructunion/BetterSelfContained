@@ -8,8 +8,8 @@
     ],
     "referencedDll": [
         "MonoGame.Framework.dll",
-        "libopenal.dll",
-        "libSDL2-2.dll",
+        "libopenal.so",
+        "libSDL2-2.so",
         "Hedgemen.Core.dll",
         "Hedgemen.dll",
         "Newtonsoft.Json.dll"
