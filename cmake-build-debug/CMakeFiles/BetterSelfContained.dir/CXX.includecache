@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
+string
+-
+vector
+-
+filesystem
+-
+
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Impl/ImplWindows.hpp
+string
+-
+vector
+-
+Windows.h
+-
+../Config/SelfContainedConfig.hpp
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
+../Util/Utilities.hpp
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
+
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Mains/MainWindows.cpp
+../Impl/ImplWindows.hpp
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Impl/ImplWindows.hpp
+../coreclrhost.h
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
+iostream
+-
+
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Util/Utilities.hpp
+../Config/SelfContainedConfig.hpp
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/Config/SelfContainedConfig.hpp
+string
+-
+
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/src/coreclrhost.h
+

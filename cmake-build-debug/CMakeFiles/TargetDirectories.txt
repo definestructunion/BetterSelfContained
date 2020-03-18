@@ -1,0 +1,3 @@
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/cmake-build-debug/CMakeFiles/BetterSelfContained.dir
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/Matthew/Desktop/Proj/Cpp/BetterSelfContained/cmake-build-debug/CMakeFiles/BetterSelfContained.dir/embed.manifest"

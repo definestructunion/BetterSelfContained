@@ -1,0 +1,18 @@
+{
+    "assemblyName": "Hedgemen.dll",
+    "domainName": "HedgemenHost",
+    "runtimePath": "runtime",
+    "clrArgs": [
+        "Dummy",
+        "Dummy1"
+    ],
+    "referencedDll": [
+        "MonoGame.Framework.dll",
+        "libopenal.dll",
+        "libSDL2-2.dll",
+        "Hedgemen.Core.dll",
+        "Hedgemen.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "grabAllInRuntimePath": false
+}
